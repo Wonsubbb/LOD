@@ -3,8 +3,6 @@ from datetime import datetime
 from .validate import validate_sido, validate_gugun
 
 
-
-
 class TrafficInfoForm(forms.Form):
     searchYear = forms.IntegerField(max_value=datetime.now().year, min_value=2012)
     siDo = forms.IntegerField(validators=[validate_sido])
